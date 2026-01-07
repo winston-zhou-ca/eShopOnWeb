@@ -1,8 +1,7 @@
 param webAppName string = uniqueString(resourceGroup().id) // Generate unique String for web app name
-param skuName string = 'F1'       // default to F1 for CI
-param skuTier string = 'Free'
-param skuCapacity int = 1
+param sku string = 'S1' // The SKU of App Service Plan
 param location string = resourceGroup().location
+
 
 var appServicePlanName = toLower('AppServicePlan-${webAppName}')
 
