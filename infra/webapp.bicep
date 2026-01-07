@@ -12,9 +12,7 @@ resource appServicePlan 'Microsoft.Web/serverfarms@2022-09-01' = {
     reserved: true
   }
   sku: {
-    name: skuName
-    tier: skuTier
-    capacity: skuCapacity
+    name: sku
   }
 }
 resource appService 'Microsoft.Web/sites@2022-09-01' = {
